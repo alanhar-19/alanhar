@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأنهار | تصميم مواقع بسيطة وسريعة</title>
+  <meta name="description" content="تصميم مواقع ثابتة بدون تعقيد - حجز مواعيد، عروض منتجات، جداول مباريات، ومواقع دينية. تواصل عبر واتساب">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+    :root {
+      --primary: #0066cc;
+      --dark-blue: #004080;
+      --whatsapp: #25D366;
+    }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f5f9ff;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* رأس الموقع */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, var(--primary), var(--dark-blue));
+      color: white;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 10px 0;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* أقسام الموقع */
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      border-right: 4px solid var(--primary);
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* زر الطلب */
+    .cta-button {
+      display: inline-block;
+      background-color: var(--whatsapp);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px 0;
+      transition: all 0.3s;
+      box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    /* روابط التواصل */
+    .contact-methods {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 30px;
+      background: white;
+      transition: all 0.3s;
+    }
+
+    /* الفوتر */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #002b5c;
+      color: white;
+    }
+
+    /* استجابة الجوال */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .tagline { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>🌊 الأنهار</h1>
+    <p class="tagline">تصميم مواقع <strong>خفيفة وسريعة</strong> بـ HTML/CSS/JS فقط</p>
+    <p class="tagline">بدون قواعد بيانات - بدون تعقيدات - تسليم فوري</p>
+  </header>
+
+  <!-- خدماتنا -->
+  <section>
+    <h2 style="text-align: center; color: var(--dark-blue);">💼 خدماتنا</h2>
+
+    <!-- كل بطاقة تمثل نوع من الخدمات -->
+    <div class="service-card">
+      <h3>📅 صفحة حجز مواعيد</h3>
+      <p>نموذج يرسل بيانات المريض مباشرةً لواتساب الطبيب.</p>
+      <p><small>مثال: عيادات - مراكز تجميل</small></p>
+    </div>
+
+    <div class="service-card">
+      <h3>🛍️ عرض منتجات</h3>
+      <p>صفحة واحدة لعرض الأجهزة مع زر طلب عبر الواتساب.</p>
+      <p><small>مثال: متاجر إلكترونية صغيرة</small></p>
+    </div>
+
+    <div class="service-card">
+      <h3>⚽ جدول مباريات</h3>
+      <p>عرض المواعيد مع إمكانية التحديث اليدوي.</p>
+      <p><small>مثال: دوريات كرة القدم</small></p>
+    </div>
+
+    <div class="service-card">
+      <h3>📖 قرآن كريم</h3>
+      <p>تصميم سهل التصفح للسور والأحكام.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>🌍 نصوص دعوية</h3>
+      <p>عرض محتوى متعدد اللغات بشكل ثابت.</p>
+    </div>
+  </section>
+
+  <!-- المميزات -->
+  <section style="background-color: #e6f0ff; border-radius: 10px;">
+    <h2 style="text-align: center; color: var(--dark-blue);">👍 مميزاتنا</h2>
+
+    <div class="service-card">
+      <h3>🚀 تسليم فوري</h3>
+      <p>احصل على موقعك خلال 24-48 ساعة</p>
+    </div>
+
+    <div class="service-card">
+      <h3>💵 أسعار مناسبة</h3>
+      <p>تبدأ من 10 دولار فقط</p>
+    </div>
+
+    <div class="service-card">
+      <h3>📞 دعم مباشر</h3>
+      <p>مساعدتك في تعديل المحتوى بنفسك</p>
+    </div>
+  </section>
+
+  <!-- زر الطلب -->
+  <section style="text-align: center;">
+    <a href="https://wa.me/967780098719" class="cta-button">📩 اطلب موقعك الآن</a>
+    <p>يرجى إرسال تفاصيل طلبك عبر الواتساب</p>
+  </section>
+
+  <!-- التواصل -->
+  <section style="text-align: center; background-color: var(--dark-blue); color: white; border-radius: 10px;">
+    <h2>📞 تواصل معنا</h2>
+    <div class="contact-methods">
+      <a href="https://wa.me/967780098719" class="contact-link" style="color: var(--whatsapp);">
+        <span>واتساب</span>
+      </a>
+      <a href="https://instagram.com/alanhar4" class="contact-link">
+        <span>إنستغرام</span>
+      </a>
+      <a href="https://www.facebook.com/share/19GiyoLxsX/?mibextid=qi2Omg" class="contact-link">
+        <span>فيسبوك</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 الأنهار | تصميم مواقع بسيطة وسريعة</p>
+  </footer>
+
+  <!-- سكربت لظهور البطاقات بالتدريج -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cards = document.querySelectorAll('.service-card');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.5s ease';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 200 * index);
+      });
+    });
+  </script>
+</body>
+</html>
